@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <script>
+   // 14 - Crie um programa que permita o acesso somente se a pessoa for maior de idade e tiver um documento.
+    
+        let idade = parseInt(prompt("Você tem qual idade?: "));
+        let documento = Number(prompt("Você tem um documento? não = 1 ou sim = 2: "));
+        if (documento > 2 || documento < 1){
+            document.write("Por favor digite o número refernte a sim ou não!");
+        }
+        if (idade < 18){
+            document.write("Você não tem a idade para acessar este site!");
+        }else if(documento == 1){
+            document.write("Por favor adquira o documento para acessar!");
+        }else{
+            document.write("Acesso permitido.");
+        }
+        </script>
+</body>
+</html>
